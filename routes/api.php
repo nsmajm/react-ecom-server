@@ -3,7 +3,6 @@
 Route::group([
 
     'middleware' => 'api',
-    'prefix' => 'auth'
 
 ], function ($router) {
 
@@ -13,3 +12,5 @@ Route::group([
     Route::post('me', 'AuthController@me');
 
 });
+
+Route::post('login', 'AuthController@login');
